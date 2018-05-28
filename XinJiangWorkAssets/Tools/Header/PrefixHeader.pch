@@ -1,0 +1,57 @@
+//
+//  PrefixHeader.pch
+//  XinJiangWorkAssets
+//
+//  Created by 杨玉珍 on 17/6/6.
+//  Copyright © 2017年 yyz. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "Header.h"
+#import "UrlHeader.h"
+#import "TitleHeader.h"
+#ifdef __OBJC__
+
+#import "LToast.h"
+#import "NetworkSingleton.h"
+#import "MJExtension.h"
+#import "DataRequest.h"
+#import "MJRefresh.h"
+#import "UserInfoManager.h"
+#import "ModelRequestResult.h"
+
+#import "Masonry.h"
+#import "SVProgressHUD.h"
+#import "WMPageController.h"
+#import "MBProgressHUD.h"
+#import "MJRefreshNormalHeader.h"
+#import "MJRefreshAutoNormalFooter.h"
+#import "BaseViewController.h"
+#import "BaseNavigationContrller.h"
+#import "BaseWMPageController.h"
+#import "UIViewController+HUD.h"
+#import <AVFoundation/AVFoundation.h>
+#import "UIColor+Hex.h"
+#import "UIImage+Color.h"
+#import "UIBarButtonItem+Badge.h"
+#import "MenuView.h"
+#import "LeftMenuView.h"
+#import "QRadioButton.h"
+#import "WSDatePickerView.h"
+#import "LaunchIntroductionView.h"
+#import "UIImageView+WebCache.h"
+#import "UIView+SDAutoLayout.h"
+
+
+
+#import <CoreEditText/CoreEditText.h>
+#endif
+
+#endif /* PrefixHeader_pch */
+

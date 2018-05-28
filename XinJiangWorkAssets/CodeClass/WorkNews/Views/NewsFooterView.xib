@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsFooterView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lQb-Ak-Kc1" customClass="NewsFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="608" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJE-iH-HDg">
+                    <rect key="frame" x="504" y="38.5" width="54" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="回复" image="toolbar_gzdt">
+                        <color key="titleColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-4X-C9r">
+                    <rect key="frame" x="0.0" y="101" width="608" height="1"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Uuf-6W-bYK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wdQ-4X-C9r" secondAttribute="trailing" id="2qX-5a-HKh"/>
+                <constraint firstAttribute="bottom" secondItem="wdQ-4X-C9r" secondAttribute="bottom" id="M2V-9e-yu7"/>
+                <constraint firstItem="wdQ-4X-C9r" firstAttribute="leading" secondItem="lQb-Ak-Kc1" secondAttribute="leading" id="SHK-Xy-4zS"/>
+                <constraint firstItem="vJE-iH-HDg" firstAttribute="centerY" secondItem="lQb-Ak-Kc1" secondAttribute="centerY" id="XNi-UH-tNY"/>
+                <constraint firstAttribute="trailing" secondItem="vJE-iH-HDg" secondAttribute="trailing" constant="50" id="l6b-9l-O02"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="repllyBtn" destination="vJE-iH-HDg" id="X2l-yR-W7H"/>
+            </connections>
+            <point key="canvasLocation" x="143" y="-68"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="toolbar_gzdt" width="25" height="25"/>
+    </resources>
+</document>

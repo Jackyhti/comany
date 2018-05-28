@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotThroughFooter"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ifi-p9-IfO" customClass="NotThroughFooter">
+            <rect key="frame" x="0.0" y="0.0" width="653" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bct-Wm-YDs">
+                    <rect key="frame" x="0.0" y="0.0" width="653" height="20"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="LOZ-bI-bam"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbb-hJ-Fe7">
+                    <rect key="frame" x="20" y="40" width="296.5" height="55"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="nsl-y1-jZc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="重新申请">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cxsq:" destination="ifi-p9-IfO" eventType="touchUpInside" id="r9b-R0-RAz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AH-Kr-emO">
+                    <rect key="frame" x="336.5" y="40" width="296.5" height="55"/>
+                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="ZPm-bH-BQO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="删除申请">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="scsq:" destination="ifi-p9-IfO" eventType="touchUpInside" id="4Mu-Uf-6Am"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7AH-Kr-emO" secondAttribute="trailing" constant="20" id="RWt-V2-oLi"/>
+                <constraint firstItem="7AH-Kr-emO" firstAttribute="top" secondItem="bct-Wm-YDs" secondAttribute="bottom" constant="20" id="TzN-pI-Yb7"/>
+                <constraint firstItem="7AH-Kr-emO" firstAttribute="width" secondItem="tbb-hJ-Fe7" secondAttribute="width" id="V75-h9-BKJ"/>
+                <constraint firstItem="bct-Wm-YDs" firstAttribute="top" secondItem="ifi-p9-IfO" secondAttribute="top" id="fTx-xA-BqD"/>
+                <constraint firstItem="7AH-Kr-emO" firstAttribute="leading" secondItem="tbb-hJ-Fe7" secondAttribute="trailing" constant="20" id="g4D-40-MkM"/>
+                <constraint firstItem="tbb-hJ-Fe7" firstAttribute="top" secondItem="bct-Wm-YDs" secondAttribute="bottom" constant="20" id="gae-vh-LbT"/>
+                <constraint firstItem="bct-Wm-YDs" firstAttribute="leading" secondItem="ifi-p9-IfO" secondAttribute="leading" id="qCW-ao-QxC"/>
+                <constraint firstItem="tbb-hJ-Fe7" firstAttribute="leading" secondItem="ifi-p9-IfO" secondAttribute="leading" constant="20" id="wkZ-A7-ewc"/>
+                <constraint firstAttribute="trailing" secondItem="bct-Wm-YDs" secondAttribute="trailing" id="zRu-jT-mgL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn1" destination="tbb-hJ-Fe7" id="aJj-dD-7SM"/>
+                <outlet property="btn2" destination="7AH-Kr-emO" id="aRs-BK-Eqy"/>
+            </connections>
+            <point key="canvasLocation" x="122.5" y="-106.5"/>
+        </view>
+    </objects>
+</document>

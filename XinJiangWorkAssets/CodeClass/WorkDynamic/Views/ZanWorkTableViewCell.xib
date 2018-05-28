@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="ZanWorkTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcY-mO-lut">
+                        <rect key="frame" x="15" y="0.0" width="324" height="96.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESw-gz-jOc">
+                                <rect key="frame" x="0.0" y="0.0" width="324" height="96.5"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ESw-gz-jOc" secondAttribute="trailing" id="K0u-hs-P8O"/>
+                            <constraint firstItem="ESw-gz-jOc" firstAttribute="leading" secondItem="xcY-mO-lut" secondAttribute="leading" id="Mnb-rZ-TNm"/>
+                            <constraint firstAttribute="bottom" secondItem="ESw-gz-jOc" secondAttribute="bottom" id="Og8-qC-kH1"/>
+                            <constraint firstItem="ESw-gz-jOc" firstAttribute="top" secondItem="xcY-mO-lut" secondAttribute="top" id="lgn-cV-MeI"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdh-tB-euR">
+                        <rect key="frame" x="15" y="96.5" width="324" height="1"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Qtj-ym-1XL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xcY-mO-lut" secondAttribute="trailing" constant="15" id="0z9-Pw-VeD"/>
+                    <constraint firstItem="tdh-tB-euR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="4VI-R1-ueQ"/>
+                    <constraint firstItem="xcY-mO-lut" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="4Wa-ot-zFy"/>
+                    <constraint firstAttribute="bottom" secondItem="tdh-tB-euR" secondAttribute="bottom" id="7t0-Ng-WsH"/>
+                    <constraint firstItem="tdh-tB-euR" firstAttribute="top" secondItem="xcY-mO-lut" secondAttribute="bottom" id="NxE-JT-ine"/>
+                    <constraint firstAttribute="trailing" secondItem="tdh-tB-euR" secondAttribute="trailing" constant="15" id="e6N-g8-5K7"/>
+                    <constraint firstItem="xcY-mO-lut" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ncD-gl-WTQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="zanLab" destination="ESw-gz-jOc" id="adq-4v-kWt"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="131"/>
+        </tableViewCell>
+    </objects>
+</document>

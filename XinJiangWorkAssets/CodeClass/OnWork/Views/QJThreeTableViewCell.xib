@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="QJThreeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMm-3I-UGO">
+                        <rect key="frame" x="20" y="20" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ide-qZ-Q97">
+                        <rect key="frame" x="0.0" y="41" width="352" height="74.5"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3rm-97-Rdv">
+                                <rect key="frame" x="0.0" y="0.0" width="352" height="74.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xnn-4t-Rg9">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="-1" id="PH0-6F-ck1"/>
+                                    <outlet property="delegate" destination="-1" id="9oj-Qn-fC4"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3rm-97-Rdv" firstAttribute="top" secondItem="ide-qZ-Q97" secondAttribute="top" id="4q4-7C-3dL"/>
+                            <constraint firstAttribute="bottom" secondItem="3rm-97-Rdv" secondAttribute="bottom" id="B7h-tz-0GM"/>
+                            <constraint firstAttribute="trailing" secondItem="3rm-97-Rdv" secondAttribute="trailing" id="KCd-CY-b4s"/>
+                            <constraint firstItem="3rm-97-Rdv" firstAttribute="leading" secondItem="ide-qZ-Q97" secondAttribute="leading" id="uTl-qh-JWo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ide-qZ-Q97" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NpX-Z8-JN3"/>
+                    <constraint firstItem="UMm-3I-UGO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="U5R-i3-uAf"/>
+                    <constraint firstItem="UMm-3I-UGO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="UFg-aF-WVu"/>
+                    <constraint firstItem="ide-qZ-Q97" firstAttribute="top" secondItem="UMm-3I-UGO" secondAttribute="bottom" id="Y05-vu-0M4"/>
+                    <constraint firstAttribute="trailing" secondItem="ide-qZ-Q97" secondAttribute="trailing" id="eQn-ou-bmd"/>
+                    <constraint firstAttribute="bottom" secondItem="ide-qZ-Q97" secondAttribute="bottom" id="lQM-dF-QP4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="conView" destination="ide-qZ-Q97" id="nNG-Mu-OGp"/>
+                <outlet property="selectView" destination="3rm-97-Rdv" id="hOo-Ef-fEv"/>
+                <outlet property="titleLab" destination="UMm-3I-UGO" id="H5c-xL-yJc"/>
+            </connections>
+            <point key="canvasLocation" x="-184" y="94"/>
+        </tableViewCell>
+    </objects>
+</document>

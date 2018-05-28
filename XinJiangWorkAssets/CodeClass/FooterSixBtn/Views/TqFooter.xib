@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TqFooter"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GbO-tG-zTq" customClass="TqFooter">
+            <rect key="frame" x="0.0" y="0.0" width="555" height="196"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EzM-xb-dmi">
+                    <rect key="frame" x="420" y="83" width="50" height="30"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="XD4-pH-yiZ"/>
+                        <constraint firstAttribute="width" constant="50" id="k2s-Yj-guu"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="已阅">
+                                <attributes>
+                                    <color key="NSColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="STHeitiSC-Medium"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G9w-g8-4Wo">
+                    <rect key="frame" x="490" y="83" width="50" height="30"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Cxa-fZ-teM"/>
+                        <constraint firstAttribute="width" constant="50" id="OCe-PB-CQK"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="回复">
+                                <attributes>
+                                    <color key="NSColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="STHeitiSC-Medium"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpt-W8-ZWf">
+                    <rect key="frame" x="0.0" y="191" width="555" height="5"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="cdy-NA-kLm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="G9w-g8-4Wo" firstAttribute="leading" secondItem="EzM-xb-dmi" secondAttribute="trailing" constant="20" id="1zR-lX-hQ8"/>
+                <constraint firstItem="G9w-g8-4Wo" firstAttribute="centerY" secondItem="GbO-tG-zTq" secondAttribute="centerY" id="3yc-u6-F5b"/>
+                <constraint firstAttribute="trailing" secondItem="gpt-W8-ZWf" secondAttribute="trailing" id="AcF-Qh-EaE"/>
+                <constraint firstAttribute="trailing" secondItem="G9w-g8-4Wo" secondAttribute="trailing" constant="15" id="IJK-bw-2Jr"/>
+                <constraint firstAttribute="bottom" secondItem="gpt-W8-ZWf" secondAttribute="bottom" id="KQw-jf-tyI"/>
+                <constraint firstItem="EzM-xb-dmi" firstAttribute="centerY" secondItem="GbO-tG-zTq" secondAttribute="centerY" id="M9c-PC-Tqo"/>
+                <constraint firstItem="gpt-W8-ZWf" firstAttribute="leading" secondItem="GbO-tG-zTq" secondAttribute="leading" id="jcJ-BX-BrK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="readBtn" destination="EzM-xb-dmi" id="BVO-LJ-k8R"/>
+                <outlet property="replyBtn" destination="G9w-g8-4Wo" id="lEN-qu-xSr"/>
+            </connections>
+            <point key="canvasLocation" x="90.5" y="-24"/>
+        </view>
+    </objects>
+</document>

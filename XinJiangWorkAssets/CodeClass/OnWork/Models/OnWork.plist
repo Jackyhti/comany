@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>str</key>
+		<string>在岗</string>
+		<key>pic</key>
+		<string>zaigang</string>
+		<key>isOpen</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>str</key>
+		<string>请假</string>
+		<key>pic</key>
+		<string>leave</string>
+		<key>isOpen</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>str</key>
+		<string>院内开会</string>
+		<key>pic</key>
+		<string>ynkh</string>
+		<key>isOpen</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>str</key>
+		<string>院外开会</string>
+		<key>pic</key>
+		<string>ywkh</string>
+		<key>isOpen</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>str</key>
+		<string>出差</string>
+		<key>pic</key>
+		<string>cc</string>
+		<key>isOpen</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>str</key>
+		<string>其他</string>
+		<key>pic</key>
+		<string>other</string>
+		<key>isOpen</key>
+		<string>0</string>
+	</dict>
+</array>
+</plist>

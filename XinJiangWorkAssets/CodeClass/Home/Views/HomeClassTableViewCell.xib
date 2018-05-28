@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="HomeClassTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(1)上午参加全市及巡回" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2i-pd-7Er">
+                        <rect key="frame" x="15" y="0.0" width="248" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未开始" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddH-YD-7Wx">
+                        <rect key="frame" x="263" y="-1" width="59" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="6lm-AA-hTQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.99215686270000003" green="0.5" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ddH-YD-7Wx" secondAttribute="trailing" constant="20" id="4AH-Sp-0mx"/>
+                    <constraint firstItem="ddH-YD-7Wx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-9" id="Meh-pC-vp5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ddH-YD-7Wx" secondAttribute="bottom" constant="-7.5" id="OcE-WR-Lnr"/>
+                    <constraint firstItem="ddH-YD-7Wx" firstAttribute="leading" secondItem="r2i-pd-7Er" secondAttribute="trailing" id="WTd-Q0-tpr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="r2i-pd-7Er" secondAttribute="bottom" constant="-8.5" id="aai-NL-8ua"/>
+                    <constraint firstItem="r2i-pd-7Er" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="bwp-QJ-4ee"/>
+                    <constraint firstItem="r2i-pd-7Er" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="ohN-aW-E0W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftLab" destination="r2i-pd-7Er" id="eYf-RN-fTx"/>
+                <outlet property="startLab" destination="ddH-YD-7Wx" id="7zM-3v-3KY"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="63"/>
+        </tableViewCell>
+    </objects>
+</document>
