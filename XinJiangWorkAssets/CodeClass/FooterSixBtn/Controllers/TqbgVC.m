@@ -135,7 +135,7 @@
     [ale addAction:C];
     [ale addAction:D];
     [self presentViewController:ale animated:YES completion:nil];
-    
+    NSLog(@"111");
 }
 
 -(UISegmentedControl*)segment{
